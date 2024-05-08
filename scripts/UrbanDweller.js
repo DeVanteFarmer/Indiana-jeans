@@ -1,8 +1,5 @@
 import { setSocioLocationId } from "./TransientState.js"
 
-
-
-
 const handleLocationChange = (changeEvent) => {
     if (changeEvent.target.name === "location") {
         const convertedToInteger = parseInt(changeEvent.target.value)
@@ -10,11 +7,6 @@ const handleLocationChange = (changeEvent) => {
         
     }
 }
-
-
-
-
-
 
 export const LocationTypeChoices = async () => {
     const response = await fetch ("http://localhost:8088/socioLocations")
